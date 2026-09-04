@@ -1,0 +1,14 @@
+# Aventuras na Veia — cabeçalhos de segurança para o Cloudflare Pages
+#
+# COMO USAR: coloque este arquivo chamado exatamente "_headers" (sem
+# extensão) na MESMA pasta do seu index.html, dentro do repositório do
+# GitHub. O Cloudflare Pages lê esse arquivo sozinho e aplica as regras
+# automaticamente em todo deploy novo — não precisa configurar nada
+# no painel do Cloudflare.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
